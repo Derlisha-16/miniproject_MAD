@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Live Stock Dashboard - Price, Change, %Change</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">📈</div>
+      <h1>Live Stock Dashboard</h1>
+    </header>
+
+    <div class="controls">
+      <input id="stockInput" placeholder="Enter stock symbol (e.g. AAPL)" />
+      <button id="addStock">Add to Watchlist</button>
+    </div>
+
+    <table class="watch-table">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th>% Change</th>
+          <th>Alert</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="stockBody"></tbody>
+    </table>
+
+    <div class="footer">
+      <small>Demo uses simulated prices. Replace API in script.js for real prices.</small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
